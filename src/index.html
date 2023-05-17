@@ -5,10 +5,56 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
+
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+  <div id="root"></div>
+  <header class="name-page" >
+    <p>¿Que quieres saber? </p> 
+  </header>
+
+  <div class="title">
+    <h1>Cipher interactivo</h1>
+  </div>
+  <!-- Contendido principal de la pagina, donde va las cajas para cambiar el texto-->
+  <!--Codificado-->
+  <main id="box_main" class="msg_box">
+    <div class="title">
+    <h2>"Aqui puedes codificar y decodificar mensajes ocultos"</h2>
+  </div>
+  
+  <div id="text_prom">
+    <p> 1º deberá introducir el mensaje que quiere codificar.<br>
+      2º Pulse el botón de codificar.<br> Una vez realizados estos pasos se mostrará el mensaje codificado y se incluirá el código que permitirá a los jugadores descifrar dicho mensaje.</p>
+  </div>
+  
+  <div class="escribir_texto">
+    <label>Escribe tu mensaje aqui </label>
+    <input type="text" id="Texto-del-usuario" class="tex_codf" placeholder="Escriba el texto aqui..">
+    <input type="text" id="Texto-Codificado" class="tex_codf" placeholder="Nuevo texto">
+  </div>  
+
+   <div>
+      <label>¿Cuanto   quieres que se corra tu mensaje?</label>
+      <input type="number" id="Offset" min="1" max="100">
     </div>
+
+    <div>
+      <button id="Accion_bt_cod" class="bt_cif">Cifrar</button>
+      <button id="Accion_bt_dif" class="bt_cif">Decifrar</button>
+    </div>
+    <button onclick="location.reload();" class="bt_cif">Limpiar</button>
+    </main>
+
+    
+    <div>
+      <footer>
+      <p>Laboratoria DEV003</p>
+      </footer>
+    </div>
+  
     <script src="index.js" type="module"></script>
+    
   </body>
 </html>
+
